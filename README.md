@@ -13,4 +13,4 @@ Aqui, você pode encontrar:
 
 ---
 
-🔗 Acesse nosso projeto: [Vamos Jogar?](https://escandioneider.github.io/pixarplay/)
+🔗 Acesse nosso projeto: [Vamos Jogar?](https://cucick2007.github.io/PixarPlay/)
