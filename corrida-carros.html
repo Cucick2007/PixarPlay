@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏁 Corrida</title>
+  <!-- aqui nao tem bootstrap :( -->
+  <link rel="stylesheet" href="css/corrida.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Voltar ao Menu</a>
+  </header>
+  <div class="container-jogo" id="containerJogo">
+    <!-- Tela de Início -->
+    <div class="tela-inicio" id="telaInicio">
+      <h1>🚗 CORRIDA KATCHAW</h1>
+      <p>Escolha seu carro e desvie dos obstáculos!</p>
+      <div class="opcoes">
+        <div class="carro-container">
+          <img src="img/mcqueen-escolha.svg" alt="McQueen" data-personagem="mcqueen" />
+          <div class="carro-info">
+            <h3>Relâmpago McQueen</h3>
+            <br>
+            <p>Velocidade: ⭐⭐⭐⭐</p>
+            <p>Controle: ⭐⭐⭐</p>
+          </div>
+        </div>
+        
+        <div class="carro-container">
+          <img src="img/sally-escolha.svg" alt="Sally" data-personagem="sally" />
+          <div class="carro-info">
+            <h3>Sally Carrera</h3>
+            <br>
+            <p>Velocidade: ⭐⭐⭐</p>
+            <p>Controle: ⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        
+        <div class="carro-container">
+          <img src="img/mater-escolha.svg" alt="Mater" data-personagem="mater" />
+          <div class="carro-info">
+            <h3>Mate</h3>
+            <br>
+            <p>Velocidade: ⭐⭐</p>
+            <p>Controle: ⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        
+        <div class="carro-container">
+          <img src="img/chick-escolha.svg" alt="Chick" data-personagem="chick" />
+          <div class="carro-info">
+            <h3>Chick Hicks</h3>
+            <br>
+            <p>Velocidade: ⭐⭐⭐⭐⭐</p>
+            <p>Controle: ⭐⭐</p>
+          </div>
+        </div>
+        
+        <div class="carro-container">
+          <img src="img/doc-escolha.svg" alt="Doc Hudson" data-personagem="doc" />
+          <div class="carro-info">
+            <h3>Doc Hudson</h3>
+            <br>
+            <p>Velocidade: ⭐⭐⭐</p>
+            <p>Controle: ⭐⭐⭐⭐</p>
+          </div>
+        </div>
+      </div>
+      <button class="botao" id="botaoIniciar" disabled onclick="jogo.iniciar()">SELECIONE UM CARRO</button>
+    </div>
+
+    <!-- Tela de Game Over -->
+    <div class="tela-inicio oculto" id="telaGameOver">
+      <h2>COLISÃO</h2>
+      <p id="pontuacaoFinal">Sua distância: 0m</p>
+      <p id="tempoFinal">Tempo de jogo: 0s</p>
+      <button class="botao" onclick="jogo.reiniciar()">JOGAR NOVAMENTE</button>
+    </div>
+
+    <!-- Velocidade e distância -->
+    <div class="placar">
+      <div class="pontuacao" id="mostradorPontuacao">DISTÂNCIA: 00000m</div>
+      <div class="velocidade" id="mostradorVelocidade">VELOCIDADE: 0 km/h</div>
+    </div>
+
+    <!-- Carro do Jogador -->
+    <div class="jogador" id="jogador"></div>
+
+    <!-- Controles -->
+    <div class="controles">
+      <button class="botao-controle" id="botaoEsquerda">‹</button>
+      <button class="botao-controle" id="botaoDireita">›</button>
+    </div>
+  </div>
+
+  <script src="script/corrida-carros.js"></script>
+</body>
+
+</html>
