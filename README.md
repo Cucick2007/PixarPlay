@@ -1,7 +1,7 @@
 # 🎬🎮 PIXARPLAY
 ## 🛠 Site em desenvolvimento
 
-Essa plataforma foi desenvolvida em conjunto com @Cucick2007 e consiste em um site de jogos inspirados no estúdio Pixar!
+Essa plataforma foi desenvolvida em conjunto com @EscandioNeider e consiste em um site de jogos inspirados no estúdio Pixar!
 >⚠ Aviso: Este projeto não tem nenhuma afiliação com a Pixar Animation Studios ou a The Walt Disney Company.
 
 Aqui, você pode encontrar:
