@@ -225,8 +225,6 @@ function acabou() {
         document.getElementById("acerto").innerHTML = "ACERTOS: " + iAcertos;
         document.getElementById("imagem").src = "img/forca" + ".png";
 
-        // document.getElementById("imagem").src = "img/forca" + (iErros + 1) + ".png";
-
         // Reativa todas as letras
         for (var i = 0; i < sLetras.length; i++) {
             var btn = document.getElementById(sLetras[i]);
